@@ -3,6 +3,8 @@ import React, { Component } from 'react';
 import './App.css';
 import Profile from './Profile.js';
 import Calkulator from './kalkulator.js';
+import toast from 'toasted-notes' 
+import 'toasted-notes/src/styles.css';
 
 class App extends React.Component {
   constructor(props){
@@ -18,6 +20,7 @@ class App extends React.Component {
       operator: null,
       hasil: null,
     };
+    toast.notify('Hello world!')
   }
   clicked(menu) {
     //utk memperbarui state sesuai dengan menu yang digunakan
